@@ -3,14 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 웹페이지</title>
+    <title>인제쇼핑몰</title>
 </head>
 <body>
-    <h1> 나의 작품 </h1>
-    <ol>
-        <li><a href="cafe.html" target="_blank">내가 만든 카페 사이트</a></li>
-        <li>Coming soon...</li>
-    </ol>
-    
+    <header>
+        <h1> <img src="images/shop.jpg" width="50" height="50" />
+        <a href="index.html">Web shop</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>  
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">News</a></li>
+            <li><a href="index.html">My Account</a></li>
+            <li><a href="index.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <aside id="left">
+        <h4>카테고리</h4>
+        <ul>
+            <li><a href="computer.html" target="_blank">컴퓨터</a></li>
+            <li><a href="clothing.html" target="_blank">의류</a></li>
+            <li><a href="music.html" target="_blank">음악</a></li>
+            <li><a href="movie.html" target="_blank">영화</a></li>
+            <li><a href="sports.html" target="_blank">스포츠/레저</a></li>
+            <li><a href="furniture.html" target="_blank">가구/인테리어</a></li>
+            <li><a href="food.html" target="_blank">식품</a></li>
+        </ul>
+    </aside>
+    <section id="main">
+        <article id="article1">
+            <iframe name="iframe1" src="computer1.html"
+            width="440" height="300" seamless></iframe>
+        </article>
+    </section>
+<aside id="right">
+    <h4>Shopping Cart</h4>
+    <h5>현재 쇼핑카트에 물품이 없습니다.</h5>
+    <a href="Cart" target="_blank">쇼핑카트 보기</a>
+    <h4>Login</h4>
+    <p>
+        아이디: <input type="text" name="id"><br>  
+        비밀번호: <input type="text" name="password"><br>
+        <input type="button" value="로그인">
+        <input type="button" value="초기화" onclick="alert('초기화되었습니다.')"><br>
+        <a href="sign_up.html" target="_blank">회원가입</a>
+        <a href="find.html" target="_blank">아이디/비밀번호 분실</a>
+        <h6>copyright (c) 2023 Web Shop</h6>
+    </p>
+</aside>
 </body>
 </html>
